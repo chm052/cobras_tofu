@@ -1,1 +1,29 @@
-test
+
+__author__ = 'marvin'
+
+import re
+
+class CobrasTofu:
+
+    def __init__(self):
+        pass
+
+    def replace_names(self, obfuscatee):
+        rgx = re.compile(".*=.*")
+        for line in obfuscatee:
+            if rgx.match(line):
+                print line
+
+        print "\n\n"
+        return obfuscatee
+
+    # TODO
+    def add_junk(self):
+        pass
+
+    # TODO think of more obfuscations
+    # TODO monetize monetize monetize
+
+f = open('test_input')
+print CobrasTofu().replace_names(f.read())
+
