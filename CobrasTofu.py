@@ -2,7 +2,8 @@ __author__ = 'marvin'
 
 import re
 
-class CobrasTofu:
+
+class VariableNameObfuscator:
 
     variable_declaration = re.compile("^[\s]*[a-zA-Z_][a-zA-Z0-9_]*[\s]*=[\s]*")
 

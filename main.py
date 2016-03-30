@@ -1,5 +1,5 @@
 __author__ = 'marvin'
-from CobrasTofu import CobrasTofu
+from CobrasTofu import VariableNameObfuscator
 
 f = open('test_input')
-print CobrasTofu().replace_names(f)
+print VariableNameObfuscator().replace_names(f)

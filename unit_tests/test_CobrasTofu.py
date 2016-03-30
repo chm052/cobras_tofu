@@ -1,5 +1,5 @@
 import unittest
-from CobrasTofu import CobrasTofu
+from CobrasTofu import VariableNameObfuscator
 
 class test_CobrasTofu(unittest.TestCase):
 
@@ -35,7 +35,7 @@ class test_CobrasTofu(unittest.TestCase):
     expected_output = """varvarvarvar= \'marvin\'    import re    class CobrasTofu:        def __init__(self):            pass        def replace_names(self, obfuscatee):varvarvarvar= re.compile(".*=.*")            for line in obfuscatee:                if rgx.match(line):                    print line            print ""            return obfuscatee        # TODO        def add_junk(self):            pass        # TODO think of more obfuscations        # TODO monetize monetize monetizevarvarvarvar= open(\'test_input\')    print CobrasTofu().replace_names(f.read())"""
 
     def test_replace_names_iterable(self):
-        cobrasTofu_testobject = CobrasTofu()
+        cobrasTofu_testobject = VariableNameObfuscator()
 
         #self.assertEqual(cobrasTofu_testobject._replace_names_iterable(self.input),
         #                 self.expected_output)
